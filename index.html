@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css">   
+</head>
+    <body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#">Learn2Code</a>
+          
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto  mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link "  href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/products">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="carreers">Carrers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contacts">Contact</a>
+              </li>
+            </div>
+            <form class="d-flex "  >
+              <input class="form-control" type="search" placeholder="Search" >
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </form>
+          
+        </div>
+      </nav>
+
+{%block content%}
+<div class="container"  id="home">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-8  ">
+      <h1>DELIVERING DIGITAL EXCELLENCE</h1>
+      <p>Enabling global companies leverage digital as a business multiplier,
+       we offer clients a unique advantage in the era of digital transformation across strategy,
+       consulting and technology services.</p>
+      </div>
+  </div>
+</div>
+<div class="container my-5">
+  <div class="row  justify-content-md-center"  id="content1">
+    <div class="col-lg-8">
+    <h1>_WHO WE ARE…</h1>
+    <p>Powering the Fourth Industrial Revolution (4IR) by
+      Delivering Digital Excellence…</p>
+  </div>
+  <div class="d-flex  flex-row col-lg-12  " id="content2" >
+      <img class="col-lg-6 col-md-3 img-fluid" src="..\static\images\download.jpg">
+      <p class="col-lg-6 col-md-3 align-middle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ab molestiae
+         mollitia rem! Sit laboriosam, soluta voluptatum exercitationem, 
+        itaque officiis, temporibus minima voluptatibus iure nam nemo fugiat voluptas laboreLorem</p>
+
+  </div>
+  </div>
+</div>
+<div class="container-fluid"  id="content3">
+  <div class="row justify-content-center mx-5">
+    <div class="col-lg-4 col-md-2">
+      <h5 clas="font-weight-bold">DIGITAL SERVICES</h5>
+      <p class="text-left text-black">Internet of Things (IOT) | Blockchain | Mobile Technologies | User Experience Enrichment | Big Data | Cloud Transformation | POS & mPOS | Microservices | DevOps</p>
+    </div>
+    <div class="col-lg-4 ol-md-2">
+      <h5 clas="font-weight-bold text-uppercase">COGNITIVE SERVICES</h5>
+      <p class="text-left text-black">Internet of Things (IOT) | Blockchain | Mobile Technologies | User Experience Enrichment | Big Data | Cloud Transformation | POS & mPOS | Microservices | DevOps</p>
+    </div>
+    <div class="col-lg-4 col-md-2">
+      <h5 clas="font-weight-bold text-uppercase">TECHNOLOGY SERVICES</h5>
+      <p class="text-left text-black">Internet of Things (IOT) | Blockchain |
+         Mobile Technologies | User Experience Enrichment | 
+        Big Data | Cloud Transformation | POS & mPOS | Microservices | DevOps</p>
+    </div>
+
+    <div class="col-lg-4 col-md-2">
+      <h5 clas="font-weight-bold text-uppercase">INFRASTRUCTURE AND CLOUD SERVICES</h5>
+      <p class="text-left text-black">Internet of Things (IOT) | Blockchain | Mobile Technologies | User Experience Enrichment | Big Data | Cloud Transformation | POS & mPOS | Microservices | DevOps</p>
+    </div>
+
+    <div class="col-lg-4 col-md-2">
+      <h5 clas="font-weight-bold text-uppercase">PRODUCTS & PLATFORMS</h5>
+      <p >Internet of Things (IOT) | Blockchain | Mobile Technologies | User Experience Enrichment | Big Data | Cloud Transformation | POS & mPOS | Microservices | DevOps</p>
+    </div>
+
+  </div>
+</div>
+  <div class="col-lg-12  col-md-6 d-flex justify-content-center my-5"  id="content4" >
+    <a   href="/products">Products</a>
+  </div>
+
+{%endblock%}
+<footer class="pt-4  mt-5" id="footer" >
+  <div class="container-fluid  ">
+    <div class="row justify-content-center ">
+      <div class="col-lg-2 col-md-6  text-center">
+        <h5 class="text-uppercase font=weight-bold"> about us</h5>
+        <ul class="unstyled">
+          <li class="text-capitalize list-unstyled">Our services</li>
+          <li class=" text-capitalize list-unstyled"> courses</li>
+          <li class=" text-capitalize list-unstyled">feedback</li>
+        </ul>
+      </div>
+        
+        <div class="col-lg-2 col-md-6  text-center">
+          <h5 class="text-uppercase font=weight-bold list-unstyled"> products</h5>
+          <ul class="unstyled">
+            <li class=" text-capitalize list-unstyled"> services and commitments</li>
+            <li class=" text-capitalize list-unstyled">Productsand platforms</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center ">
+          <h5 class="text-uppercase font=weight-bold"> contact</h5>
+          <ul class="unstyled">
+            <li class=" list-unstyled"> <i class="fa fa-instagram px-2" aria-hidden="true"> </i>learn_to_code</li>
+            <li class=" list-unstyled "><i class="fa fa-facebook-official px-2" aria-hidden="true"></i>learn_to_code</li>
+            <li class="list-unstyled"><i class="fa fa-envelope px-2" aria-hidden="true"></i>learn_to_code@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 text-center ">
+          <h5 class="  text-uppercase font=weight-bold"> contact</h5>
+          <p>learntocode <br> Trivandrum </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="container-fluid p-0 " id="copyryt">
+    <div class="text-center pb-2 pt-3">
+      <p> © 2020 All rights reserved</p>
+    </div>
+  </div>
+
+</footer>
+
+
+</body>
+</html>
